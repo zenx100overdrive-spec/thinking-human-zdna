@@ -1,0 +1,49 @@
+{
+  "schema_version": "zenn-draft-evidence.v1",
+  "slug": "motto-current-position-instruction",
+  "candidate": "A",
+  "why_this_first": "6項目の公開価値基準のうち少なくとも3つを満たす（判断が変わった／実験結果が出た／一般的見方と違うCounterviewがEvidenceで成立した）。同日に4本のEvidenceファイルが揃っており、候補中で最もEvidence密度が高い。既存note記事『8時間で77周した』とは主題が異なる（あちらは計測規律、こちらは需要の形）ため重複リスクが低い。候補C・Dは本セッション内にEvidenceが存在せず、SE/Kernel境界（ProjectionとしてEvidenceで明示されたものだけをGroundingとする）に抵触するため見送った。",
+  "claims": [
+    {
+      "text": "個人開発者の動機分類で「自分が困っていたから作った」は5%、「AIで作れるようになったから作った」は36%だった",
+      "type": "VERIFIED_RESULT",
+      "source": "data/business_os/evidence/20260906_market_analysis_note_x.md"
+    },
+    {
+      "text": "「作った」「AI活用」の投稿は合計60%を占めるが、「売れない」「集客」は合計5%しかなかった",
+      "type": "VERIFIED_RESULT",
+      "source": "data/business_os/evidence/20260906_market_analysis_note_x.md"
+    },
+    {
+      "text": "note 230件を「自分を知る型（鏡）」と「直し方型（指示）」に分類したところ、鏡33件・指示5件で6.6倍の開きがあった",
+      "type": "VERIFIED_RESULT",
+      "source": "data/business_os/evidence/20260906_mirror_vs_instruction.md"
+    },
+    {
+      "text": "この層の最上位記事（1209いいね）は現在地を返すだけで、何をすべきかを一切書いていない",
+      "type": "OBSERVED_FACT",
+      "source": "data/business_os/evidence/20260906_mirror_vs_instruction.md"
+    },
+    {
+      "text": "HORU は当初、公開URLを入力すると診断結果と複数の軌跡を提示する設計で、その後プロジェクトフォルダを投げ込む入力へ作り直した",
+      "type": "OBSERVED_FACT",
+      "source": "本セッションの会話。web_site/horu/engine/folder.js の実装が folder-based 入力を裏づける"
+    },
+    {
+      "text": "「見る」から「行動」への距離を縮める設計変更を検討し、選択肢を1つに絞ることを提案した",
+      "type": "AI_INFERENCE",
+      "source": "Claude の分析（本セッション）"
+    },
+    {
+      "text": "『目指すべきは、見る→行動に移させるのをほぼイコールにしてプロセスを排除する商品』という方針は Shota 本人の発言",
+      "type": "HUMAN_STATEMENT",
+      "source": "本セッションの会話"
+    }
+  ],
+  "excluded": [
+    {
+      "claim": "市場は『次どうすればいい？』と言っていた、という表現そのもの",
+      "reason": "元の投げかけの言葉を借りたタイトル案であり、Evidence が支持するのは正確には『次どうすればいいか”を問う人が、答えとして指示ではなく鏡を選ぶ』という、より限定された主張である。記事本文ではこの精緻化を明示する。"
+    }
+  ]
+}
